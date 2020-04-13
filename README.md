@@ -1,6 +1,8 @@
-## How to use this template
-
 # `re-google-signin`
+
+🚧 this is binding from
+[`@react-native-community/google-signin`](https://github.com/react-native-community/google-signin).
+The binding is still not complete and doesn't follow semver.
 
 [![Build Status](https://github.com/ruang-guru/re-google-signin/workflows/Build/badge.svg)](https://github.com/ruang-guru/re-google-signin/actions)
 [![Version](https://img.shields.io/npm/v/ruang-guru/re-google-signin.svg)](https://www.npmjs.com/@ruangguru/re-google-signin)
@@ -15,11 +17,6 @@ Exposed as `GoogleSignin` module.
 `@react-native-community/google-signin` X.y._
 
 ## Installation
-
-When
-[`@react-native-community/something`](https://github.com/react-native-community/something)
-is properly installed & configured by following their installation instructions,
-you can install the bindings:
 
 ```console
 npm install @ruangguru/re-google-signin
