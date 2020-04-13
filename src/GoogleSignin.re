@@ -1,4 +1,3 @@
-type t;
-
-[@bs.module "@react-native-community/something"]
-external method: unit => unit = "method";
+module GoogleSignin = GoogleSignin__GoogleSignin;
+module GoogleSigninButton = GoogleSignin__GoogleSigninButton;
+module StatusCode = GoogleSignin__StatusCode;
