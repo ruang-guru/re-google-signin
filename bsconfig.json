@@ -1,5 +1,6 @@
 {
   "name": "@ruang-guru/re-google-signin",
+  "namespace": true,
   "refmt": 3,
   "reason": {
     "react-jsx": 3

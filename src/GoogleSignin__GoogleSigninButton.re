@@ -29,9 +29,7 @@ module Color = {
   external light: t = "Light";
 };
 
-[@bs.module "@react-native-community/google-signin"]
-[@bs.scope "GoogleSigninButton"]
-[@react.component]
+[@bs.module "@react-native-community/google-signin"] [@react.component]
 external make:
   (
     ~style: ReactNative.Style.t=?,
@@ -41,4 +39,4 @@ external make:
     ~disabled: bool=?
   ) =>
   React.element =
-  "default";
+  "GoogleSigninButton";
