@@ -75,10 +75,10 @@ module User = {
 external signInSilently: unit => Js.Promise.t(User.t) = "signInSilently";
 
 [@bs.module "@react-native-community/google-signin"] [@bs.scope "GoogleSignin"]
-external signin: unit => Js.Promise.t(User.t) = "signin";
+external signin: unit => Js.Promise.t(User.t) = "signIn";
 
 [@bs.module "@react-native-community/google-signin"] [@bs.scope "GoogleSignin"]
-external signout: unit => Js.Promise.t(unit) = "signout";
+external signout: unit => Js.Promise.t(unit) = "signOut";
 
 [@bs.module "@react-native-community/google-signin"] [@bs.scope "GoogleSignin"]
 external revokeAccess: unit => Js.Promise.t(unit) = "revokeAccess";
