@@ -56,9 +56,10 @@ module User = {
   type t = {
     user,
     scopes: option(list(string)),
-    idToken: Js.Null.t(string),
+    idToken: string,
     serviceAuthCode: Js.Null.t(string),
   }
+  [@bs.deriving accessors]
   and user = {
     id: string,
     name: Js.Null.t(string),
@@ -67,8 +68,6 @@ module User = {
     familyName: Js.Null.t(string),
     givenName: Js.Null.t(string),
   };
-
-  let user = t => t.user;
 };
 
 [@bs.module "@react-native-community/google-signin"] [@bs.scope "GoogleSignin"]
@@ -95,6 +94,7 @@ external clearCachedAccessToken: unit => Js.Promise.t(unit) =
   "clearCachedAccessToken";
 
 module Token = {
+  [@bs.deriving accessors]
   type t = {
     idToken: string,
     accessToken: string,
